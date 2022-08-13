@@ -12,76 +12,94 @@ li {
   margin: 0;
   list-style: none;
 }
-body {
-  height: 81px;
-  border-bottom: 1px solid rgb(228, 227, 227);
-}
 a {
   color: inherit;
   text-decoration: none;
   list-style: none;
 }
+body {
+  font-family: "GmarketSansMedium";
+  font-size: 15px;
+}
+header {
+  border-bottom: 1px solid #e4e3e3;
+  // border: 1px solid purple;
+}
 .menu-bar {
-  width: 1080px;
   height: 80px;
-  margin: 0 auto;
+  background-color: white;
   // border: 1px solid blue;
 }
 .menu-bar-1 {
-  // border: 1px solid purple;
   width: 1080px;
-  height: 80px;
-  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+  flex: 1 1 auto;
 }
-.menu-bar-1 > ul .items {
-  position: relative;
-  list-style: none;
-  display: inline-block;
-}
-.logo-1 {
-  top: 27px;
-  left: 20px;
+.menu-bar > div > a {
+  display: relative;
+  align-items: center;
+  padding: 30px 30px;
   display: inline-flex;
-  // border: 1px solid red;
-}
-.kakaoimage {
-  display: inline-block;
-  padding: 25px;
+  // border: 1px solid black;
 }
 .items {
   float: right;
-  // border: 1px solid red;
+}
+.items > ul > li > a {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 30px;
+  // border: 1px solid orange;
 }
 .nav-item {
-  // border: 1px solid orange;
-  font-family: "GmarketSansMedium";
-  font-size: 15px;
-  margin: 0.5rem;
-  margin-top: 18px;
-  margin-left: 20px;
-  padding: 10px;
   display: inline-block;
 }
-
 .submit {
   background-color: rgb(255, 227, 44);
   border-radius: 22px;
-  padding: 15px;
-  display: inline-block;
+  // border: 1px solid blue;
+  padding: 20px;
+  display: inline-flex;
+  position: relative;
+  margin-left: 10px;
 }
 
-.nav-item > ul {
+.items > ul > li > div {
+  position: absolute;
   display: none;
+  left: 0;
+  width: 100%;
+  // background-color: lightgray;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-.items {
-  // position: absolute;
-}
-
-.items > ul:hover ul {
+.items > ul > li:hover > div {
   display: block;
 }
+.menu-2 {
+  margin: 0 auto;
+  border: 1px solid blue;
+  // background-color: yellowgreen;
+  width: 1080px;
+}
+.menu-2 > div > ul > li {
+  display: inline-block;
+  display: table-cell;
+  text-align: center;
+  border: 1px solid red;
+  vertical-align: top;
+  top: 100%;
+  margin: 0 100px;
+}
+.menu-2 > div > ul li > a {
+  // border: 1px solid red;
+  margin: 20px 20px;
+}
 
-.nav-item > li > ul > li {
-  display: inline-flex;
-  position: absolute;
+.items > ul > li > div ul > li > a {
+  display: block;
+  text-align: center;
 }

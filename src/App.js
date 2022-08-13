@@ -7,8 +7,8 @@ const App = () => {
   return (
     <>
       <Topbar />
-      {/* <Content1 />
-      <Content2 /> */}
+      <Content1 />
+      <Content2 />
     </>
   );
 };

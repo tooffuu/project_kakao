@@ -63,20 +63,15 @@ a {
   font-size: 16px;
   background-color: #ededed;
   border-radius: 20px;
-  padding: 15px 40px;
+  padding: 15px 45px;
   margin-top: 15px;
   position: absolute;
   font-family: "KOTRA_GOTHIC";
 }
-.link_bank:hover {
+.link_bank:hover > a {
   text-decoration: underline;
 }
 .link_bank > a {
-  vertical-align: top;
-}
-.link_bank > a > img {
-  position: absolute;
+  // border: 1px solid red;
   display: inline-block;
-  width: 10px;
-  height: 10px;
 }

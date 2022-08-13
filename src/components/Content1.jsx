@@ -29,14 +29,18 @@ const content1 = () => {
             <div className="button">
               <ul className="download-button">
                 <li>
-                  <img src={imgUrl2} alt="" />
-                  <a href="#">Google Play</a>
+                  <a href="#">
+                    <img src={imgUrl2} alt="" />
+                    Google Play
+                  </a>
                 </li>
               </ul>
               <ul className="download-button">
                 <li>
-                  <img src={imgUrl3} alt="" />
-                  <a href="#">App Store</a>
+                  <a href="#">
+                    <img src={imgUrl3} alt="" />
+                    App Store
+                  </a>
                 </li>
               </ul>
             </div>

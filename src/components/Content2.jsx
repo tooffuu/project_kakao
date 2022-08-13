@@ -21,10 +21,7 @@ const Content2 = () => {
               여러 건의 이체도 몇 번의 터치로 손쉽게 보낼 수 있습니다.
             </p>
             <div className="link_bank">
-              <a href="#">
-                카카오뱅크 입출금통장
-                <img src={imgArr} alt="" />
-              </a>
+              <a href="#">카카오뱅크 입출금통장 ></a>
             </div>
           </div>
         </div>
