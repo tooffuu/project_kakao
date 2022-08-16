@@ -160,99 +160,102 @@ const Topbar = () => {
               <li>
                 <a href="#">상품안내</a>
                 <div className="menu-2">
-                  <ul>
-                    <li>
-                      <a href="#">예적금</a>
-                      <ul>
-                        <li>
-                          <a href="#">입출금통장</a>
-                        </li>
-                        <li>
-                          <a href="#">모임통장</a>
-                        </li>
-                        <li>
-                          <a href="#">세이프박스</a>
-                        </li>
-                        <li>
-                          <a href="#">저금통</a>
-                        </li>
-                        <li>
-                          <a href="#">정기예금</a>
-                        </li>
-                        <li>
-                          <a href="#">자유적금</a>
-                        </li>
-                        <li>
-                          <a href="#">26주적금</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">대출</a>
-                      <ul>
-                        <li>
-                          <a href="#">비상금대출</a>
-                        </li>
-                        <li>
-                          <a href="#">마이너스 통장대출</a>
-                        </li>
-                        <li>
-                          <a href="#">신용대출</a>
-                        </li>
-                        <li>
-                          <a href="#">개인사업자 대출</a>
-                        </li>
-                        <li>
-                          <a href="#">전월세보증금 대출</a>
-                        </li>
-                        <li>
-                          <a href="#">주택담보대출</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">서비스</a>
-                      <ul>
-                        <li>
-                          <a href="#">내 신용정보</a>
-                        </li>
-                        <li>
-                          <a href="#">해외송금 보내기</a>
-                        </li>
-                        <li>
-                          <a href="#">해외송금 받기</a>
-                        </li>
-                        <li>
-                          <a href="#">프렌즈 체크카드</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">제휴서비스</a>
-                      <ul>
-                        <li>
-                          <a href="#">증권사 주식계좌</a>
-                        </li>
-                        <li>
-                          <a href="#">제휴 신용카드</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">mini</a>
-                      <ul>
-                        <li>
-                          <a href="#">카카오뱅크 mini</a>
-                        </li>
-                        <li>
-                          <a href="#">mini카드</a>
-                        </li>
-                        <li>
-                          <a href="#">mini 26일저금</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">예적금</a>
+                        <ul>
+                          <li>
+                            <a href="#">입출금통장</a>
+                          </li>
+                          <li>
+                            <a href="#">모임통장</a>
+                          </li>
+                          <li>
+                            <a href="#">세이프박스</a>
+                          </li>
+                          <li>
+                            <a href="#">저금통</a>
+                          </li>
+                          <li>
+                            <a href="#">정기예금</a>
+                          </li>
+                          <li>
+                            <a href="#">자유적금</a>
+                          </li>
+                          <li>
+                            <a href="#">26주적금</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">대출</a>
+
+                        <ul>
+                          <li>
+                            <a href="#">비상금대출</a>
+                          </li>
+                          <li>
+                            <a href="#">마이너스 통장대출</a>
+                          </li>
+                          <li>
+                            <a href="#">신용대출</a>
+                          </li>
+                          <li>
+                            <a href="#">개인사업자 대출</a>
+                          </li>
+                          <li>
+                            <a href="#">전월세보증금 대출</a>
+                          </li>
+                          <li>
+                            <a href="#">주택담보대출</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">서비스</a>
+                        <ul>
+                          <li>
+                            <a href="#">내 신용정보</a>
+                          </li>
+                          <li>
+                            <a href="#">해외송금 보내기</a>
+                          </li>
+                          <li>
+                            <a href="#">해외송금 받기</a>
+                          </li>
+                          <li>
+                            <a href="#">프렌즈 체크카드</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">제휴서비스</a>
+                        <ul>
+                          <li>
+                            <a href="#">증권사 주식계좌</a>
+                          </li>
+                          <li>
+                            <a href="#">제휴 신용카드</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">mini</a>
+                        <ul>
+                          <li>
+                            <a href="#">카카오뱅크 mini</a>
+                          </li>
+                          <li>
+                            <a href="#">mini카드</a>
+                          </li>
+                          <li>
+                            <a href="#">mini 26일저금</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -260,102 +263,104 @@ const Topbar = () => {
               <li>
                 <a href="#">고객센터</a>
                 <div className="menu-2">
-                  <ul>
-                    <li>
-                      <a href="#">이용안내</a>
-                      <ul>
-                        <li>
-                          <a href="#">자주 묻는 질문</a>
-                        </li>
-                        <li>
-                          <a href="#">이용시간 안내</a>
-                        </li>
-                        <li>
-                          <a href="#">ATM 이용안내</a>
-                        </li>
-                        <li>
-                          <a href="#">금리안내</a>
-                        </li>
-                        <li>
-                          <a href="#">금리인하요구권 안내</a>
-                        </li>
-                        <li>
-                          <a href="#">수수료안내</a>
-                        </li>
-                        <li>
-                          <a href="#">상담안내</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">상담하기</a>
-                      <ul>
-                        <li>
-                          <a href="#">고객의 소리</a>
-                        </li>
-                        <li>
-                          <a href="#">1:1 문의</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">소비자보호</a>
-                      <ul>
-                        <li>
-                          <a href="#">소비자보호체계</a>
-                        </li>
-                        <li>
-                          <a href="#">소비자보호 우수사례</a>
-                        </li>
-                        <li>
-                          <a href="#">전자민원</a>
-                        </li>
-                        <li>
-                          <a href="#">소비자보호공시</a>
-                        </li>
-                        <li>
-                          <a href="#">민원사무편람</a>
-                        </li>
-                        <li>
-                          <a href="#">금융정보</a>
-                        </li>
-                        <li>
-                          <a href="#">금융사기 관련공시</a>
-                        </li>
-                        <li>
-                          <a href="#">보안취약점 신고 안내</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">증명서</a>
-                      <ul>
-                        <li>
-                          <a href="#">나의 증명서 발급내역</a>
-                        </li>
-                        <li>
-                          <a href="#">증명서 진위 확인</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">약관 ・ 서식</a>
-                      <ul>
-                        <li>
-                          <a href="#">약관</a>
-                        </li>
-                        <li>
-                          <a href="#">서식</a>
-                        </li>
-                        <li>
-                          <a href="#">상품설명서</a>
-                        </li>
-                        <li>
-                          <a href="#">상품공시</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <div>
+                    <ul>
+                      <li>
+                        <a href="#">이용안내</a>
+                        <ul>
+                          <li>
+                            <a href="#">자주 묻는 질문</a>
+                          </li>
+                          <li>
+                            <a href="#">이용시간 안내</a>
+                          </li>
+                          <li>
+                            <a href="#">ATM 이용안내</a>
+                          </li>
+                          <li>
+                            <a href="#">금리안내</a>
+                          </li>
+                          <li>
+                            <a href="#">금리인하요구권 안내</a>
+                          </li>
+                          <li>
+                            <a href="#">수수료안내</a>
+                          </li>
+                          <li>
+                            <a href="#">상담안내</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">상담하기</a>
+                        <ul>
+                          <li>
+                            <a href="#">고객의 소리</a>
+                          </li>
+                          <li>
+                            <a href="#">1:1 문의</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">소비자보호</a>
+                        <ul>
+                          <li>
+                            <a href="#">소비자보호체계</a>
+                          </li>
+                          <li>
+                            <a href="#">소비자보호 우수사례</a>
+                          </li>
+                          <li>
+                            <a href="#">전자민원</a>
+                          </li>
+                          <li>
+                            <a href="#">소비자보호공시</a>
+                          </li>
+                          <li>
+                            <a href="#">민원사무편람</a>
+                          </li>
+                          <li>
+                            <a href="#">금융정보</a>
+                          </li>
+                          <li>
+                            <a href="#">금융사기 관련공시</a>
+                          </li>
+                          <li>
+                            <a href="#">보안취약점 신고 안내</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">증명서</a>
+                        <ul>
+                          <li>
+                            <a href="#">나의 증명서 발급내역</a>
+                          </li>
+                          <li>
+                            <a href="#">증명서 진위 확인</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">약관 ・ 서식</a>
+                        <ul>
+                          <li>
+                            <a href="#">약관</a>
+                          </li>
+                          <li>
+                            <a href="#">서식</a>
+                          </li>
+                          <li>
+                            <a href="#">상품설명서</a>
+                          </li>
+                          <li>
+                            <a href="#">상품공시</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -364,8 +369,10 @@ const Topbar = () => {
                 <a href="#">이벤트</a>
               </li>
             </ul>
-            <nav className="submit">
-              <a href="#">서류제출하기</a>
+            <nav className="nav-item submit">
+              <li>
+                <a href="#">서류제출하기</a>
+              </li>
             </nav>
           </nav>
         </div>

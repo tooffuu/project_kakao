@@ -21,7 +21,7 @@ const Content5 = () => {
           </p>
           <div className="savingButton">
             <a href="#">
-              정기예금
+              26주적금
               <img src={imgArr} alt="" />
             </a>
           </div>

@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "KOTRA_GOTHIC";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .content {
   width: 100%;
   height: 884px;
@@ -29,11 +37,8 @@
   display: block;
   position: absolute;
   margin-left: 0;
-  //   border: 1px solid green;
 }
-
 .text {
-  //   border: 1px solid blue;
   color: inherit;
   display: block;
   position: relative;
@@ -45,6 +50,7 @@
   letter-spacing: -0.3px;
 }
 .body-text {
+  font-family: "KOTRA_GOTHIC";
   font-size: 18px;
   letter-spacing: -0.5px;
   color: rgb(62, 62, 62);
@@ -68,6 +74,7 @@
   margin-left: 20px;
 }
 .download-button > li > a {
+  font-family: "GmarketSansMedium";
   font-size: 1rem;
   display: inline-flex;
   margin-left: 10px;

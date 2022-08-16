@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "KOTRA_GOTHIC";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 ul,
 li {
@@ -16,20 +24,16 @@ a {
   color: inherit;
   text-decoration: none;
   list-style: none;
-}
-body {
-  font-family: "GmarketSansMedium";
   font-size: 15px;
-}
-header {
-  border-bottom: 1px solid #e4e3e3;
-  // border: 1px solid purple;
+  font-family: "KOTRA_GOTHIC";
 }
 .menu-bar {
   height: 80px;
   background-color: white;
-
-  // border: 1px solid blue;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #e4e3e3;
 }
 .menu-bar-1 {
   width: 1080px;
@@ -42,7 +46,6 @@ header {
   align-items: center;
   padding: 30px 30px;
   display: inline-flex;
-  // border: 1px solid black;
 }
 .items {
   float: right;
@@ -53,16 +56,18 @@ header {
   height: 100%;
   align-items: center;
   padding: 30px;
-  // border: 1px solid orange;
 }
 .nav-item {
   display: inline-block;
 }
+.nav-item > li > a {
+  font-size: 16px;
+}
+
 .submit {
   background-color: rgb(255, 227, 44);
   border-radius: 22px;
-  // border: 1px solid blue;
-  padding: 20px;
+  padding: 11px 17px;
   display: inline-flex;
   position: relative;
   margin-left: 10px;
@@ -73,7 +78,6 @@ header {
   display: none;
   left: 0;
   width: 100%;
-  // background-color: lightgray;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -82,24 +86,38 @@ header {
 }
 .menu-2 {
   margin: 0 auto;
-  border: 1px solid blue;
-  // background-color: yellowgreen;
   width: 1080px;
+  top: 100%;
+  background-color: white;
+  position: relative;
+  border-top: 1px solid #e4e3e3;
+}
+.menu-2 > div {
+  position: relative;
+}
+.menu-2 > div > ul {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
 }
 .menu-2 > div > ul > li {
   display: inline-block;
-  display: table-cell;
-  text-align: center;
-  border: 1px solid red;
   vertical-align: top;
   top: 100%;
-  margin: 0 100px;
   position: relative;
-  background-color: white;
+  justify-content: space-between;
+  margin: 0 40px;
 }
 .menu-2 > div > ul li > a {
-  // border: 1px solid red;
   margin: 20px 20px;
+}
+.menu-2 > div > ul > li > a {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(66, 66, 66);
+  line-height: 2;
+  letter-spacing: 2px;
 }
 
 .items > ul > li > div ul > li > a {

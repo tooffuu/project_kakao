@@ -8,7 +8,7 @@ const Content4 = () => {
   return (
     <nav className="content2">
       <div className="content2-0">
-        <div className="content2-1">
+        <div className="content4-1">
           <img src={imgUrl5} alt="" />
           <div className="con2_text">
             <h2>
