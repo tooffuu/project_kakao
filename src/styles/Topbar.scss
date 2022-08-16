@@ -28,6 +28,7 @@ header {
 .menu-bar {
   height: 80px;
   background-color: white;
+
   // border: 1px solid blue;
 }
 .menu-bar-1 {
@@ -93,6 +94,8 @@ header {
   vertical-align: top;
   top: 100%;
   margin: 0 100px;
+  position: relative;
+  background-color: white;
 }
 .menu-2 > div > ul li > a {
   // border: 1px solid red;

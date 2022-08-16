@@ -1,11 +1,4 @@
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "KOTRA_GOTHIC";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff")
     format("woff");
@@ -43,7 +36,7 @@ a {
   left: 100px;
   top: 55px;
 }
-.con_text {
+.con2_text {
   display: inline-block;
   position: relative;
   //   border: 1px solid purple;
@@ -52,7 +45,7 @@ a {
   left: 180px;
   bottom: 250px;
 }
-.con_bodytext {
+.con2_bodytext {
   font-size: 16px;
   letter-spacing: -0.5px;
   color: rgb(62, 62, 62);
@@ -61,24 +54,19 @@ a {
   letter-spacing: 1px;
 }
 
-.link_bank {
+.link_bank2 {
   font-size: 16px;
   background-color: #f1f1f1;
   border-radius: 20px;
-  padding: 15px 45px;
+  padding: 15px 90px;
   margin-top: 15px;
   position: absolute;
   font-family: "KOTRA_GOTHIC";
 }
-.link_bank:hover > a {
+.link_bank2:hover > a {
   text-decoration: underline;
 }
-.link_bank > a {
-  // border: 1px solid red;
-  display: inline-block;
-}
-
-.link_bank > a > img {
+.link_bank2 > a > img {
   height: 10px;
   margin-left: 10px;
 }
