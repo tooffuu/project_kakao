@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Content3.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Content3 = () => {
   const imgArr = "/images/icons/home_arr.ico";
   const imgSvg = "/images/images/main-savings.png";
   const imgSvg2 = "/images/images/main-savings-money.png";
+
+  useEffect(() => {
+    AOS.init();
+  });
 
   return (
     <nav className="content3">
@@ -37,7 +43,11 @@ const Content3 = () => {
             <img src={imgSvg2} alt="" />
           </div>
         </div>
-        <div className="con3-saving">
+        <div
+          className="con3-saving"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <img src={imgSvg} alt="" />
         </div>
       </div>

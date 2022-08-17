@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Content6.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Content4 = () => {
   const imgFor = "/images/images/main-foreign-new.png";
   const imgArr = "/images/icons/home_arr.ico";
   const imgMap = "/images/images/home_map.png";
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <nav className="content6">
       <img src={imgMap} alt="" />
       <div className="content6-0">
         <div className="content6-1">
-          <img src={imgFor} alt="" />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="1500"
+            src={imgFor}
+            alt=""
+          />
           <div className="con2_text">
             <h2>
               해외계좌송금과

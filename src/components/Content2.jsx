@@ -23,7 +23,7 @@ const Content2 = () => {
             <div className="link_bank">
               <a href="#">
                 카카오뱅크 입출금통장
-                <img src={imgArr} alt="" />
+                <img className="ico" src={imgArr} alt="" />
               </a>
             </div>
           </div>
