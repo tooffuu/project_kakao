@@ -7,8 +7,20 @@ const Content7 = () => {
 
   return (
     <nav className="content7">
+      <span className="ico_star ico_star1"></span>
+      <span className="ico_star ico_star2"></span>
+      <span className="ico_star ico_star3"></span>
+      <span className="ico_star ico_star4"></span>
+      <span className="ico_star ico_star5"></span>
+      <span className="ico_star ico_star6"></span>
+      <span className="ico_star ico_star7"></span>
+      <span className="ico_star ico_star8"></span>
       <div className="sky">
         <div className="content7-0">
+          <span className="moon">
+            <span className="moon_original"></span>
+            <span className="moon_shadow"></span>
+          </span>
           <div className="content7-1">
             <div className="con7_text">
               <h2>복잡한 서류 제출을 간편하게, 내가 원하는 시간에</h2>

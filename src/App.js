@@ -19,6 +19,7 @@ const App = () => {
       <Content5 />
       <Content6 />
       <Content7 />
+      <Content3 />
     </>
   );
 };

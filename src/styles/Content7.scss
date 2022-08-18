@@ -13,14 +13,23 @@
   font-weight: normal;
   font-style: normal;
 }
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
+
+@keyframes clittering {
+  0% {
     opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
   }
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -31,32 +40,94 @@ a {
 }
 .content7 {
   background-color: #333b58;
+  position: relative;
   width: 100%;
   height: 930px;
-  position: relative;
   font-family: "GmarketSansMedium";
   font-size: 1.6rem;
 }
-.content7 > div {
-  background-color: #559cde;
-  width: 100%;
-  height: 100%;
-  transition: height 0.5s;
+
+// 반짝이는 별
+.ico_star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
 }
-.content7 > .sky {
+
+.ico_star1 {
+  top: 30%;
+  left: 10%;
+  animation: clittering 4s infinite;
+}
+.ico_star2 {
+  top: 10%;
+  left: 20%;
+  animation: clittering 3s infinite;
+}
+.ico_star3 {
+  top: 25%;
+  left: 15%;
+  animation: clittering 5s infinite;
+}
+.ico_star4 {
+  top: 40%;
+  right: 15%;
+  animation: clittering 2s infinite;
+}
+.ico_star5 {
+  top: 43%;
+  right: 30%;
+  animation: clittering 4s infinite;
+}
+.ico_star6 {
+  top: 73%;
+  left: 27%;
+  animation: clittering 1.8s infinite;
+}
+.ico_star7 {
+  top: 65%;
+  left: 22%;
+  animation: clittering 3.5s infinite;
+}
+.ico_star8 {
+  top: 65%;
+  left: 22%;
+  animation: clittering 3.5s infinite;
+}
+.sky {
+  background-color: #559cde;
+  position: relative;
+  width: 100%;
+  // height: 100%;
   height: 0;
+  // transition-timing-function: ease-out;
 }
 .content7-0 {
+  position: relative;
   width: 1200px;
   height: 930px;
   display: block;
-  position: relative;
   margin: 0 auto;
   text-align: center;
+  // border: 1px solid red;
+}
+// 달
+.moon_original {
+  position: absolute;
+  background-color: #fff;
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  right: 0;
+  top: 240px;
+  transition: background-color 0.85s;
 }
 .content7-1 {
   position: relative;
-  top: 150px;
+  top: 170px;
+  // border: 1px solid blue;
 }
 .con7_text {
   color: #fff;
@@ -69,7 +140,6 @@ a {
   font-family: "KOTRA_GOTHIC";
   letter-spacing: 1px;
 }
-
 .con7_text > div > a {
   font-size: 17px;
   border-radius: 10px;
@@ -80,7 +150,7 @@ a {
   font-family: "KOTRA_GOTHIC";
   background-color: rgba(255, 255, 255, 0.1);
 }
-.link_bank3:hover > a {
+.link_bank3 > a:hover {
   text-decoration: underline;
 }
 .link_bank3 > a > img {
@@ -88,10 +158,10 @@ a {
   margin-left: 10px;
 }
 .loanImage > img {
-  position: absolute;
   display: inline-block;
+  position: absolute;
   width: 430px;
   height: 565px;
+  left: 32%;
   bottom: 0;
-  left: 380px;
 }

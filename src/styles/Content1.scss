@@ -12,7 +12,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+::selection {
+  background-color: #ffe400;
+}
 .content {
   width: 100%;
   height: 884px;

@@ -46,7 +46,9 @@ const Content3 = () => {
         <div
           className="con3-saving"
           data-aos="fade-left"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          data-aos-offset="50%"
         >
           <img src={imgSvg} alt="" />
         </div>

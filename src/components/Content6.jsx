@@ -19,8 +19,9 @@ const Content4 = () => {
         <div className="content6-1">
           <img
             data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="1500"
+            data-aos-duration="1300"
+            data-aos-once="true"
+            data-aos-offset="50%"
             src={imgFor}
             alt=""
           />
