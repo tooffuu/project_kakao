@@ -30,6 +30,15 @@
   }
 }
 
+@keyframes fadeOut {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -96,14 +105,7 @@ a {
   left: 22%;
   animation: clittering 3.5s infinite;
 }
-.sky {
-  background-color: #559cde;
-  position: relative;
-  width: 100%;
-  // height: 100%;
-  height: 0;
-  // transition-timing-function: ease-out;
-}
+
 .content7-0 {
   position: relative;
   width: 1200px;
@@ -111,7 +113,6 @@ a {
   display: block;
   margin: 0 auto;
   text-align: center;
-  // border: 1px solid red;
 }
 // 달
 .moon_original {
@@ -120,25 +121,40 @@ a {
   width: 110px;
   height: 110px;
   border-radius: 55px;
-  right: 0;
-  top: 240px;
-  transition: background-color 0.85s;
+  right: 30px;
+  top: 210px;
+  // transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.moon_shadow {
+  position: absolute;
+  // width: 110px;
+  // height: 110px;
+  width: 11px;
+  height: 11px;
+  // background-color: #333b58;
+  background-color: red;
+  border-radius: 56px;
+  right: 130px;
+  top: 200px;
+  transform: scale(1.5);
+  transition: 0.5s;
 }
 .content7-1 {
   position: relative;
   top: 170px;
-  // border: 1px solid blue;
 }
 .con7_text {
   color: #fff;
 }
 .con7_bodytext {
+  position: relative;
   font-size: 16px;
   letter-spacing: -0.5px;
   color: rgb(170, 170, 170);
   line-height: 1.5;
   font-family: "KOTRA_GOTHIC";
   letter-spacing: 1px;
+  bottom: 10px;
 }
 .con7_text > div > a {
   font-size: 17px;
@@ -164,4 +180,18 @@ a {
   height: 565px;
   left: 32%;
   bottom: 0;
+}
+.sky {
+  background-color: #559cde;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  // height: 100%;
+  height: 0;
+  animation: fadeOut;
+  transition-property: height;
+  transition: height 0.3s linear;
+  // height: 0;
+  // transition-timing-function: ease-out;
 }
