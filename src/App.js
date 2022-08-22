@@ -8,6 +8,7 @@ import Content5 from "./components/Content5";
 import Content6 from "./components/Content6";
 import Content7 from "./components/Content7";
 import Content8 from "./components/Content8";
+import Content9 from "./components/Content9";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Content6 />
       <Content7 />
       <Content8 />
+      <Content9 />
     </>
   );
 };
