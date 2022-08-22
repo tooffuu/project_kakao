@@ -6,6 +6,7 @@ const Content9 = () => {
 
   return (
     <nav className="content9">
+      <div className="text_bar_line"></div>
       <div className="content9-0">
         <div className="text9">
           <h2>

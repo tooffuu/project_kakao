@@ -81,6 +81,10 @@
   display: inline-flex;
   margin-left: 10px;
 }
+.download-button > li > a:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 .download-button > li > a > img {
   width: 19px;
   height: 19px;

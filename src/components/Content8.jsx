@@ -30,11 +30,11 @@ const Content8 = () => {
           </div>
         </div>
         <div>
-          <img src={card_1} alt="믿음직스러운 사자, 라이언 체크카드" />
+          {/* <img src={card_1} alt="믿음직스러운 사자, 라이언 체크카드" />
           <img src={card_2} alt="애교만점 복숭아, 어피치 체크카드" />
           <img src={card_3} alt="토끼 옷을 입은, 무지 체크카드" />
           <img src={card_4} alt="작은 악어를 닮은, 콘 체크카드" />
-          <img src={card_5} alt="캐릭터 없이 시크한, 블랙 체크카드" />
+          <img src={card_5} alt="캐릭터 없이 시크한, 블랙 체크카드" /> */}
         </div>
       </div>
     </nav>
