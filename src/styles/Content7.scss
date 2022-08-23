@@ -55,7 +55,6 @@ a {
   font-family: "GmarketSansMedium";
   font-size: 1.6rem;
 }
-
 // 반짝이는 별
 .ico_star {
   position: absolute;
@@ -117,7 +116,6 @@ a {
   transition-property: height;
   transition: height 0.3s linear;
 }
-
 .content7-0 {
   position: relative;
   width: 1200px;
@@ -154,16 +152,19 @@ a {
   top: -100%;
   left: -100%;
 }
-.content7.active .moon > .moon_shadow {
-  top: -23%;
-  left: -23%;
-  background-color: #333b58;
-  transition-delay: 0.25s;
-}
 .content7.active .moon_original {
   transition-delay: 0.2s;
   background-color: #fff;
 }
+
+.content7.active .moon > .moon_shadow {
+  top: -23%;
+  left: -23%;
+  background-color: #333b58;
+  transition-delay: 0.3s;
+  transition: top 0.3s 0.3s, left 0.3s 0.3s;
+}
+
 .content7.active .sky {
   height: 0;
 }

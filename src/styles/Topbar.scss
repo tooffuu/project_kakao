@@ -56,7 +56,10 @@ a {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 30px;
+  padding: 27.5px;
+}
+.items > ul > li > a:hover {
+  border-bottom: 3px solid black;
 }
 .nav-item {
   display: inline-block;
@@ -64,7 +67,9 @@ a {
 .nav-item > li > a {
   font-size: 16px;
 }
-
+.nav-item > li > a:hover {
+  text-decoration: underline;
+}
 .submit {
   background-color: rgb(255, 227, 44);
   border-radius: 22px;
