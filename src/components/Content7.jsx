@@ -69,7 +69,7 @@ class Content7 extends React.Component {
     return (
       <nav
         className="content7 active-on-visible"
-        data-active-on-visible-delay="1400"
+        data-active-on-visible-delay="1000"
       >
         <span className="ico_star ico_star1"></span>
         <span className="ico_star ico_star2"></span>

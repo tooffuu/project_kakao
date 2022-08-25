@@ -72,11 +72,37 @@ a {
   height: 10px;
   margin-left: 10px;
 }
-
-.slider-div > img {
-  // border: 1px solid red;
-  width: 280px;
-  height: 441px;
-  position: absolute;
-  bottom: 50px;
+.con {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.item > div > img:first-child {
+  width: 240px;
+  height: 378px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+.slider-box-1 {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item {
+  transition: transform 0.25s;
+}
+.item > .img-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.slick-center {
+  transform: scale(1.25);
+}
+.slider-box-1 {
+  margin-top: 250px;
 }

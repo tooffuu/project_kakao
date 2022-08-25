@@ -11,7 +11,7 @@ const Content9 = () => {
         <div className="text9">
           <h2>
             IT 기술로 카카오뱅크를 <br />
-            만들어 갑니다.
+            　만들어 갑니다.
           </h2>
           <div className="text_bar"></div>
         </div>

@@ -63,7 +63,7 @@
 }
 .download-button {
   // border: 1px solid red;
-  width: 160px;
+  width: 180px;
   height: 58px;
   display: inline-block;
   background-color: white;
@@ -71,23 +71,21 @@
   border-radius: 15px;
 }
 .download-button > li {
-  font-size: 17px;
-  margin-top: 10%;
-  margin-left: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.download-button > li > a > img {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
 }
 .download-button > li > a {
   font-family: "GmarketSansMedium";
   font-size: 1rem;
   display: inline-flex;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .download-button > li > a:hover {
   text-decoration: underline;
   text-underline-position: under;
-}
-.download-button > li > a > img {
-  width: 19px;
-  height: 19px;
-  margin-left: -10px;
-  margin-right: 5px;
 }
