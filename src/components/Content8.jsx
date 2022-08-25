@@ -17,7 +17,12 @@ const Content8 = () => {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", left: "-180px", top: "250px" }}
+        style={{
+          ...style,
+          display: "block",
+          left: "-180px",
+          top: "250px",
+        }}
         onClick={onClick}
       >
         <img
