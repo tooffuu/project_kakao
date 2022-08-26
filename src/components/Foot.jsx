@@ -51,35 +51,47 @@ const Foot = () => {
           </span>
           <br />
           <div className="last_bar">
-            <a href="#">
+            <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110">
               <img
                 src="https://www.kakaobank.com/static/images/web/footer/webaccessibility.png"
                 alt=""
               />
               <span>웹 접근성 품질인증</span>
             </a>
-            <div className="sns_bar">
-              <ul>
-                <li>
-                  <img src="" alt="" />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <img src="" alt="" />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <img src="" alt="" />
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <img src="" alt="" />
-                </li>
-              </ul>
-            </div>
+            <ul className="list_channel">
+              <li>
+                <a
+                  className="link_facebook"
+                  href="https://www.facebook.com/kakaobank.official"
+                >
+                  <span className="ico_sns"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link_instagram"
+                  href="https://www.instagram.com/kakaobank.official/"
+                >
+                  <span className="ico_sns"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link_youtube"
+                  href="https://www.youtube.com/kakaobank"
+                >
+                  <span className="ico_sns"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  className="link_branch"
+                  href="https://brunch.co.kr/@kakaobank"
+                >
+                  <span className="ico_sns"></span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -76,3 +76,36 @@ a {
   margin-right: 7px;
   margin-top: 10px;
 }
+.list_channel {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  bottom: 30px;
+}
+.list_channel > li {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px;
+}
+.list_channel .ico_sns {
+  width: 24px;
+  height: 24px;
+}
+.ico_sns {
+  display: block;
+  overflow: hidden;
+  background: url("https://kakaobank.com/static/images/web/ico_sns.png")
+    no-repeat;
+}
+.link_facebook .ico_sns {
+  background-position: 0 -90px;
+}
+.link_instagram .ico_sns {
+  background-position: -193px -138px;
+}
+.link_youtube .ico_sns {
+  background-position: -90px -90px;
+}
+.link_branch .ico_sns {
+  background-position: -217px -138px;
+}
