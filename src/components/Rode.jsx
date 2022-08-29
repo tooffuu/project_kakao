@@ -1,10 +1,14 @@
 import React from "react";
+import Topbar from "./Topbar";
 
 const Rode = () => {
   return (
-    <div>
-      <h2>안녕하세요.</h2>
-    </div>
+    <>
+      <Topbar />
+      <div>
+        <h2>안녕하세요.</h2>
+      </div>
+    </>
   );
 };
 
