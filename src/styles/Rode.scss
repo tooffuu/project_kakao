@@ -13,6 +13,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ChosunSg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body,
 ul,
 li {
@@ -36,6 +44,10 @@ a {
   width: 100%;
   border-bottom: 1px solid #e4e3e3;
 }
+.rode_bar {
+  background-color: #313955;
+  position: relative;
+}
 .menu-bar-1 {
   width: 1080px;
   margin: 0 auto;
@@ -58,8 +70,11 @@ a {
   align-items: center;
   padding: 26.5px;
 }
-.items > ul > li > a:hover {
-  border-bottom: 3px solid black;
+// .items > ul > li > a:hover {
+//   border-bottom: 3px solid black;
+// }
+.items > ul:first-child {
+  border-bottom: 3px solid white;
 }
 .nav-item {
   display: inline-block;
@@ -73,6 +88,7 @@ a {
 .nav-item:last-child > li > a:hover {
   text-decoration: none;
 }
+
 .submit {
   background-color: rgb(255, 227, 44);
   border-radius: 22px;
@@ -91,6 +107,9 @@ a {
 }
 .items > ul > li:hover > div {
   display: block;
+}
+.rode_items ul > li > a {
+  color: white;
 }
 .menu-2 {
   margin: 0 auto;
@@ -131,4 +150,42 @@ a {
 .items > ul > li > div ul > li > a {
   display: block;
   text-align: center;
+  color: rgb(66, 66, 66);
+}
+.rode_con {
+  position: relative;
+  top: 40px;
+  width: 1080px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "ChosunSg";
+  font-size: 1.2rem;
+  border-bottom: 1px solid #e4e3e3;
+  // border: 1px solid red;
+}
+.tit_cont {
+  position: relative;
+  top: 30px;
+  // border: 1px solid red;
+}
+.tit_cont > div {
+  position: relative;
+  top: 100px;
+  font-size: 18px;
+  // border: 1px solid blue;
+}
+.address {
+  font-size: 15px;
+}
+.map {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 1080px;
+  height: 400px;
+  z-index: -1;
+}
+.rode_api_2 {
+  margin-top: 100px;
 }

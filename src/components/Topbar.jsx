@@ -29,7 +29,7 @@ const Topbar = () => {
                             <a href="#">주주사 소개</a>
                           </li>
                           <li>
-                            <a href="#">오시는 길</a>
+                            <a href="/rodemap">오시는 길</a>
                           </li>
                           <li>
                             <a href="#">제휴문의</a>
