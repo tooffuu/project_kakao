@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Notice.scss";
-import Foot from "./Foot";
+import "../notice_styles/Notice.scss";
+import Foot from "../components/Foot";
 
 const Notice = () => {
   return (
@@ -381,12 +381,13 @@ const Notice = () => {
       <div className="rode_content">
         <div className="rode_body">
           <div className="rode_con">
-            <div className="tit_cont" id="wrapper">
+            <div className="tit_cont">
               <h2>
                 <br />
                 공지사항
               </h2>
             </div>
+            <div></div>
           </div>
         </div>
       </div>
