@@ -1,21 +1,27 @@
 /* global kakao */
 import React, { useEffect } from "react";
+import Foot from "./Foot";
 import "../styles/Rode.scss";
+
+const { kakao } = window;
 
 const Rode = () => {
   useEffect(() => {
     var container = document.getElementById("map");
     var options = {
-      center: new kakao.maps.LatLng(37.39545057333142, 127.11217004159914),
+      center: new window.kakao.maps.LatLng(
+        37.39545057333142,
+        127.11217004159914
+      ),
       level: 3,
     };
-    var map = new kakao.maps.Map(container, options);
+    var map = new window.kakao.maps.Map(container, options);
 
-    var markerPosition = new kakao.maps.LatLng(
+    var markerPosition = new window.kakao.maps.LatLng(
       37.39545057333142,
       127.11217004159914
     );
-    var marker = new kakao.maps.Marker({
+    var marker = new window.kakao.maps.Marker({
       position: markerPosition,
     });
     marker.setMap(map);
@@ -43,7 +49,7 @@ const Rode = () => {
     <>
       <nav className="menu-bar rode_bar">
         <div className="menu-bar-1">
-          <a href="#">
+          <a href="/">
             <img
               src="https://www.kakaobank.com/static/images/web/logo_white.svg"
               alt=""
@@ -66,7 +72,7 @@ const Rode = () => {
                             <a href="#">주주사 소개</a>
                           </li>
                           <li>
-                            <a href="#">오시는 길</a>
+                            <a href="/rodemap">오시는 길</a>
                           </li>
                           <li>
                             <a href="#">제휴문의</a>
@@ -91,7 +97,7 @@ const Rode = () => {
                         <a href="#">새소식</a>
                         <ul>
                           <li>
-                            <a href="#">공지사항</a>
+                            <a href="/notice">공지사항</a>
                           </li>
                           <li>
                             <a href="#">보도자료</a>
@@ -414,46 +420,54 @@ const Rode = () => {
           </nav>
         </div>
       </nav>
-      <div className="rode_con">
-        <div className="tit_cont">
-          <h2>
-            <br />
-            오시는 길
-          </h2>
-          <div className="rode_api">
-            <h3>판교오피스</h3>
-            <br />
-            <div className="address">
-              <span>
-                <strong>주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                경기도 성남시 분당구 분당내곡로 131, 11층(백현동, 판교테크원)
-              </span>
-              <br />
-              <br />
-              <span>
-                <strong>전화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                02-6288-6000
-              </span>
+      <div className="rode_content">
+        <div className="rode_body">
+          <div className="rode_con">
+            <div className="tit_cont" id="wrapper">
+              <h2>
+                <br />
+                오시는 길
+              </h2>
+              <div className="rode_api">
+                <h3>판교오피스</h3>
+                <br />
+                <div className="address">
+                  <span>
+                    <strong>주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    경기도 성남시 분당구 분당내곡로 131, 11층(백현동,
+                    판교테크원)
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    <strong>전화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    02-6288-6000
+                  </span>
+                </div>
+              </div>
+              <div className="map" id="map"></div>
+              <div className="rode_api rode_api_2">
+                <h3>서울오피스 (고객센터)</h3>
+                <br />
+                <div className="address">
+                  <span>
+                    <strong>주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    서울특별시 영등포구 여의대로 108 파크원 타워 2 35층
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    <strong>전화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    1599-3333
+                  </span>
+                </div>
+              </div>
+              <div className="map" id="map2"></div>
             </div>
           </div>
-          <div className="map" id="map"></div>
-          <div className="rode_api rode_api_2">
-            <h3>서울오피스 (고객센터)</h3>
-            <br />
-            <div className="address">
-              <span>
-                <strong>주소&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                서울특별시 영등포구 여의대로 108 파크원 타워 2 35층
-              </span>
-              <br />
-              <br />
-              <span>
-                <strong>전화&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                1599-3333
-              </span>
-            </div>
-          </div>
-          <div className="map" id="map2"></div>
+        </div>
+        <div className="footer">
+          <Foot />
         </div>
       </div>
     </>

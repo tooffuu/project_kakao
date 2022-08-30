@@ -1,22 +1,23 @@
 import React from "react";
-import "../styles/Topbar.scss";
+import "../styles/Notice.scss";
+import Foot from "./Foot";
 
-const Topbar = () => {
+const Notice = () => {
   return (
     <>
-      <header className="menu-bar">
+      <nav className="menu-bar rode_bar">
         <div className="menu-bar-1">
-          <a href="#">
+          <a href="/">
             <img
-              src="https://www.kakaobank.com/static/images/web/logo_black.svg"
+              src="https://www.kakaobank.com/static/images/web/logo_white.svg"
               alt=""
             />
           </a>
-          <nav className="items">
+          <nav className="items rode_items">
             <ul className="nav-item">
               <li>
                 <a href="#">은행소개</a>
-                <div className="menu-2">
+                <div className="menu-2 rode-menu">
                   <div>
                     <ul>
                       <li>
@@ -72,7 +73,7 @@ const Topbar = () => {
             <ul className="nav-item">
               <li>
                 <a href="#">IR투자정보</a>
-                <div className="menu-2">
+                <div className="menu-2 rode-menu">
                   <div>
                     <ul>
                       <li>
@@ -159,7 +160,7 @@ const Topbar = () => {
             <ul className="nav-item">
               <li>
                 <a href="#">상품안내</a>
-                <div className="menu-2">
+                <div className="menu-2 rode-menu">
                   <div>
                     <ul>
                       <li>
@@ -262,7 +263,7 @@ const Topbar = () => {
             <ul className="nav-item">
               <li>
                 <a href="#">고객센터</a>
-                <div className="menu-2">
+                <div className="menu-2 rode-menu">
                   <div>
                     <ul>
                       <li>
@@ -376,9 +377,24 @@ const Topbar = () => {
             </nav>
           </nav>
         </div>
-      </header>
+      </nav>
+      <div className="rode_content">
+        <div className="rode_body">
+          <div className="rode_con">
+            <div className="tit_cont" id="wrapper">
+              <h2>
+                <br />
+                공지사항
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <Foot />
+      </div>
     </>
   );
 };
 
-export default Topbar;
+export default Notice;

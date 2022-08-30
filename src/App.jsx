@@ -12,6 +12,7 @@ import Content8 from "./components/Content8";
 import Content9 from "./components/Content9";
 import Foot from "./components/Foot";
 import Rode from "./components/Rode";
+import Notice from "./components/Notice";
 
 const App = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
           </Route>
           <Route path={"/rodemap"} exact>
             <Rode />
+          </Route>
+          <Route path={"/notice"} exact>
+            <Notice />
           </Route>
         </Switch>
       </BrowserRouter>
