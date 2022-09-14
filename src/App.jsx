@@ -1,18 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Topbar from "./components/Topbar";
-import Content1 from "./components/Content1";
-import Content2 from "./components/Content2";
-import Content3 from "./components/Content3";
-import Content4 from "./components/Content4";
-import Content5 from "./components/Content5";
-import Content6 from "./components/Content6";
-import Content7 from "./components/Content7";
-import Content8 from "./components/Content8";
-import Content9 from "./components/Content9";
-import Foot from "./components/Foot";
+import Content_app from "./components/Content_app";
+import Notice_app from "./components_notice/Notice_app";
 import Rode from "./components/Rode";
-import Notice from "./components_notice/Notice";
+import Post_Write from "./components_notice/Post_Write";
+import Post_Detail from "./components_notice/Post_Detail";
 
 const App = () => {
   return (
@@ -20,23 +12,19 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path={"/"} exact>
-            <Topbar />
-            <Content1 />
-            <Content2 />
-            <Content3 />
-            <Content4 />
-            <Content5 />
-            <Content6 />
-            <Content7 />
-            <Content8 />
-            <Content9 />
-            <Foot />
+            <Content_app />
           </Route>
           <Route path={"/rodemap"} exact>
             <Rode />
           </Route>
           <Route path={"/notice"} exact>
-            <Notice />
+            <Notice_app />
+          </Route>
+          <Route path={"/write"} exact>
+            <Post_Write />
+          </Route>
+          <Route path={"/notice/:id"} exact>
+            <Post_Detail />
           </Route>
         </Switch>
       </BrowserRouter>

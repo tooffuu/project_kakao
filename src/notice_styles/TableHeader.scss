@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "MICEGothic Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+.notice_top {
+  position: relative;
+  height: 50px;
+  width: 1080px;
+  top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5px solid rgb(147, 147, 147);
+}
+.button_1 {
+  position: relative;
+  top: -20px;
+  left: 950px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: rgb(223, 223, 223);
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "MICEGothic Bold";
+}
+.header {
+  background-color: rgb(209, 209, 209);
+}
+.header th:first-child {
+  width: 100px;
+}
+.header th:nth-child(2) {
+  width: 500px;
+}
+.header th:nth-child(3) {
+  width: 200px;
+}
+.header th:last-child {
+  width: 100px;
+}
+
+.post_box {
+  background-color: whitesmoke;
+  position: relative;
+  top: 20px;
+}

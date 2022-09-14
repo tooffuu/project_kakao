@@ -1,0 +1,57 @@
+.write_home {
+  width: 1080px;
+  height: 800px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+}
+.tableinput {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 35px;
+  input {
+    position: relative;
+    border: 1px solid blue;
+    width: 1000px;
+    height: 60px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "KOTRA_GOTHIC";
+    &::placeholder {
+      position: relative;
+      width: 970px;
+      left: 10px;
+    }
+  }
+  textarea {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "KOTRA_GOTHIC";
+    // &::placeholder {
+    //   position: absolute;
+    //   height: 450px;
+    //   width: 970px;
+    //   left: 10px;
+    //   top: 20px;
+    // }
+  }
+}
+.write_sub {
+  position: relative;
+  border: 0.5px solid rgb(119, 119, 119);
+  padding: 10px 40px;
+  border-radius: 10px;
+  top: 28px;
+  left: 850px;
+  cursor: pointer;
+  font-family: "KOTRA_GOTHIC";
+}

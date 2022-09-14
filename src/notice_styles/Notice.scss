@@ -40,7 +40,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   min-height: 100%;
-  border: 1px solid blue;
+  // border: 1px solid blue;
 }
 .rode_con {
   position: relative;
@@ -49,12 +49,13 @@ a {
   height: 130px;
   font-family: "ChosunSg";
   font-size: 1.2rem;
+  padding-bottom: 20px;
   border-bottom: 1px solid #e4e3e3;
 }
 .tit_cont {
   position: relative;
   top: 30px;
-  border: 1px solid red;
+  display: inline-block;
 }
 .footer {
   bottom: 0;

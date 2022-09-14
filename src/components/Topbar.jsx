@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Topbar.scss";
 
 const Topbar = () => {
@@ -29,7 +30,7 @@ const Topbar = () => {
                             <a href="#">주주사 소개</a>
                           </li>
                           <li>
-                            <a href="/rodemap">오시는 길</a>
+                            <Link to="/rodemap">오시는 길</Link>
                           </li>
                           <li>
                             <a href="#">제휴문의</a>
@@ -54,7 +55,7 @@ const Topbar = () => {
                         <a href="#">새소식</a>
                         <ul>
                           <li>
-                            <a href="/notice">공지사항</a>
+                            <Link to="/notice">공지사항</Link>
                           </li>
                           <li>
                             <a href="#">보도자료</a>

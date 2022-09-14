@@ -1,8 +1,9 @@
 import React from "react";
 import "../notice_styles/Notice.scss";
 import Foot from "../components/Foot";
+import { Link } from "react-router-dom";
 
-const Notice = () => {
+const Notice = ({ children }) => {
   return (
     <>
       <nav className="menu-bar rode_bar">
@@ -30,7 +31,7 @@ const Notice = () => {
                             <a href="#">주주사 소개</a>
                           </li>
                           <li>
-                            <a href="/rodemap">오시는 길</a>
+                            <Link to="/rodemap">오시는 길</Link>
                           </li>
                           <li>
                             <a href="#">제휴문의</a>
@@ -55,7 +56,7 @@ const Notice = () => {
                         <a href="#">새소식</a>
                         <ul>
                           <li>
-                            <a href="/notice">공지사항</a>
+                            <Link to="/notice">공지사항</Link>
                           </li>
                           <li>
                             <a href="#">보도자료</a>
@@ -387,7 +388,7 @@ const Notice = () => {
                 공지사항
               </h2>
             </div>
-            <div></div>
+            <div className="notice_insert">{children}</div>
           </div>
         </div>
       </div>

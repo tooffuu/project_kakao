@@ -1,0 +1,73 @@
+.PostListItem {
+  margin-bottom: 15px;
+  font-family: "KOTRA_GOTHIC";
+  width: 1080px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.Header_1 {
+  position: relative;
+  top: -3px;
+}
+.boardId {
+  width: 120px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+}
+.boardtext_1 {
+  position: relative;
+  display: inline-block;
+  width: 580px;
+  text-align: center;
+}
+.boardtext {
+  display: inline-block;
+  font-size: 17px;
+  cursor: pointer;
+}
+.boardtext:hover {
+  text-decoration: underline;
+  display: inline-block;
+}
+.register_date {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  left: 10px;
+  text-align: center;
+}
+.edit {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  // left: 15px;
+}
+.remove {
+  display: inline-block;
+  cursor: pointer;
+  // margin-left: 30px;
+}
+.changeitem {
+  position: relative;
+  display: inline-block;
+  left: 17px;
+}
+.boardcont {
+  text-align: left;
+  margin-top: 10px;
+  height: 100px;
+  background-color: rgb(230, 230, 230);
+  font-size: 17px;
+  max-height: 500px;
+}
+.boardcont div {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
