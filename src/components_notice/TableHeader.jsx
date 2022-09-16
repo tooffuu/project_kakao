@@ -1,14 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../notice_styles/TableHeader.scss";
 
 const TableHeader = ({ children }) => {
   return (
     <>
       <div className="all_a">
-        <Link to="/write">
-          <button className="button_1">글쓰기</button>
-        </Link>
+        <button
+          className="button_1"
+          onClick={() => {
+            document.location.href = "/write";
+          }}
+        >
+          작성
+        </button>
         <table className="notice_top">
           <thead className="header">
             <tr>

@@ -8,33 +8,6 @@ const Notice_app = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-  // const nextId = useRef(1);
-
-  // onInsert 다른 컴포넌트에서도 사용하기 위해 app에서 정의함
-  // const onInsert = (title, content) => {
-  //   const post = {
-  //     id: nextId,
-  //     title: title,
-  //     content: content,
-  //   };
-  //   setPosts((posts) => posts.concat(post));
-  //   nextId.current++;
-  // };
-
-  // const onInsert = async (title, content) => {
-  //   try {
-  //     const data = await axios({
-  //       url: `http://localhost:4001/boards/insert`,
-  //       method: "POST",
-  //       data: title,
-  //       content,
-  //     });
-  //     console.log(data);
-  //     setPosts((posts) => [...posts, data.data]);
-  //   } catch (e) {
-  //     setError(e);
-  //   }
-  // };
 
   const onRemove = async (id) => {
     try {
@@ -56,7 +29,7 @@ const Notice_app = () => {
           url: "http://localhost:4001/boards",
           method: "GET",
         });
-        // console.log(data);
+        // console.log(data.data);
         setPosts(data.data);
         setIsLoading(false);
       } catch (e) {
@@ -73,7 +46,6 @@ const Notice_app = () => {
   if (isLoading) {
     return <>LOADING ...</>;
   }
-
   return (
     <>
       <Notice>
@@ -86,3 +58,29 @@ const Notice_app = () => {
 };
 
 export default Notice_app;
+
+// onInsert 다른 컴포넌트에서도 사용하기 위해 app에서 정의함
+// const onInsert = (title, content) => {
+//   const post = {
+//     id: nextId,
+//     title: title,
+//     content: content,
+//   };
+//   setPosts((posts) => posts.concat(post));
+//   nextId.current++;
+// };
+
+// const onInsert = async (title, content) => {
+//   try {
+//     const data = await axios({
+//       url: `http://localhost:4001/boards/insert`,
+//       method: "POST",
+//       data: title,
+//       content,
+//     });
+//     console.log(data);
+//     setPosts((posts) => [...posts, data.data]);
+//   } catch (e) {
+//     setError(e);
+//   }
+// };

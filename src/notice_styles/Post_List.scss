@@ -2,12 +2,13 @@
   position: absolute;
   min-height: 850px;
   max-height: 850px;
-  top: 30px;
+  top: 38px;
+  left: 2px;
   background-color: whitesmoke;
+  border: 0.3px solid rgb(191, 191, 191);
 }
 .post_list {
   width: 102%;
   list-style: none;
-  // margin-top: 30px;
   overflow-y: auto;
 }

@@ -1,9 +1,23 @@
 .PostListItem {
-  margin-bottom: 15px;
-  font-family: "KOTRA_GOTHIC";
-  width: 1080px;
+  padding-bottom: 15px;
+  // font-family: "KOTRA_GOTHIC";
+  font-family: "고딕";
+  width: 1075px;
   overflow: hidden;
   padding-top: 20px;
+  border: 0.3px solid rgb(191, 191, 191);
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 15px;
+}
+.PostListItem:first-child {
+  border-top: 0px;
+}
+.PostListItem:last-child {
+  border: 0.3px solid rgb(191, 191, 191);
+  border-left: 0px;
+  border-right: 0px;
 }
 .Header_1 {
   position: relative;
@@ -25,7 +39,6 @@
 }
 .boardtext {
   display: inline-block;
-  font-size: 17px;
   cursor: pointer;
 }
 .boardtext:hover {
@@ -61,7 +74,6 @@
   margin-top: 10px;
   height: 100px;
   background-color: rgb(230, 230, 230);
-  font-size: 17px;
   max-height: 500px;
 }
 .boardcont div {

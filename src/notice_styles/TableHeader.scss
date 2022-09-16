@@ -26,8 +26,11 @@
   font-size: 15px;
   font-family: "MICEGothic Bold";
 }
+.button_1 > Link {
+  border: 1px solid blue;
+}
 .header {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(225, 225, 225);
 }
 .header th:first-child {
   width: 100px;

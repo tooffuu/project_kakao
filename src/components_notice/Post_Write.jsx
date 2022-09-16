@@ -1,7 +1,5 @@
 import axios from "axios";
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Notice from "../components_notice/Notice";
 import "../notice_styles/Post_Write.scss";
 
@@ -32,54 +30,18 @@ const Post_Write = () => {
       });
   };
 
-  // const onInsert = async (e, title, content) => {
-  //   e.preventDefault();
-  //   const data = await axios({
-  //     url: `http://localhost:4001/boards/insert`,
-  //     method: "POST",
-  //     data: title,
-  //     content,
-  //   }).then(() => {
-  //     // alert("등록완료 !");
-  //     console.log(data.data);
-  //   });
-  // };
-
-  // const onInsert = async (title, content) => {
-  //   try {
-  //     const data = await axios({
-  //       url: `http://localhost:4001/boards/insert`,
-  //       method: "POST",
-  //       data: title,
-  //       content,
-  //     });
-  //     e.preventDefault();
-  //     console.log(data);
-  //     setPosts((posts) => [...posts, data.data]);
-  //   } catch (e) {
-  //     setError(e);
-  //   }
-  // };
-
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   setInput(initialInput);
-  //   onInsert(input);
-  // };
-
-  // const onFinish = (input, e) => {
-  //   e.preventDefault();
-  //   console.log("Success", input);
-  // };
-
   return (
     <>
       <Notice>
-        <Link to="/notice">
-          <button className="button_1">목록</button>
-        </Link>
+        <button
+          className="button_1"
+          onClick={() => {
+            document.location.href = "/notice";
+          }}
+        >
+          목록
+        </button>
         <div className="write_home">
-          {/* <form className="tableinput" action="/boards" method="POST"> */}
           <form className="tableinput">
             <input
               onChange={onChange}

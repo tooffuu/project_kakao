@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../notice_styles/PostListItem.scss";
-import Post_Detail from "./Post_Detail";
 
 const PostListItem = ({ post, onRemove }) => {
   const { title, id, perform_date, content } = post;
@@ -13,9 +12,14 @@ const PostListItem = ({ post, onRemove }) => {
         <div className="Header_1">
           <div className="boardId">{id}</div>
           <div className="boardtext_1">
-            <Link to={`/notice/${id}`}>
-              <div className="boardtext">{title}</div>
-            </Link>
+            <div
+              className="boardtext"
+              onClick={() => {
+                document.location.href = `/notice/${id}`;
+              }}
+            >
+              {title}
+            </div>
           </div>
           <div className="register_date">{data[0]}</div>
           <div className="changeitem">
@@ -32,9 +36,9 @@ const PostListItem = ({ post, onRemove }) => {
             </div>
           </div>
         </div>
-        <div className="boardcont">
+        {/* <div className="boardcont">
           <div>{content}</div>
-        </div>
+        </div> */}
       </li>
     </>
   );

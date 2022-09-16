@@ -1,42 +1,80 @@
-import React from "react";
-import "../notice_styles/Post_Detail.scss";
 import axios from "axios";
-
-const onDetail = async (id, posts, setPosts, setError) => {
-  try {
-    const data = await axios({
-      url: `http://localhost:4001/boards/${id}`,
-      method: "GET",
-    });
-    console.log(data);
-    setPosts((posts) => posts.filter((post) => post.id === id));
-    if (posts.length === 1) {
-      return posts[0];
-    }
-    return null;
-  } catch (e) {
-    setError(e);
-  }
-};
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import "../notice_styles/Post_Detail.scss";
+import Notice from "./Notice";
 
 const Post_Detail = () => {
+  const [postItem, setPostItem] = useState([]);
+  const [error, setError] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const getPostItem = async (id) => {
+      try {
+        const data = await axios({
+          url: `http://localhost:4001/boards/${id}`,
+          method: "GET",
+        });
+        setPostItem(data.data);
+      } catch (e) {
+        setError(e);
+      }
+    };
+    getPostItem(id);
+  }, [id]);
+
   return (
-    <div>
-      <h1>상세페이지 : 번 게시글</h1>
-      {/* <div>
-        <h1>상세페이지 ${id}번</h1>
-      </div>
-      <div>
-        <h2>제목 : {title}</h2>
-      </div>
-      <div>
-        <h2>내용 : {content}</h2>
-      </div>
-      <div>
-        <h2>작성일자 : {perform_date}</h2>
-      </div> */}
-    </div>
+    <>
+      <Notice>
+        <button
+          className="button_1"
+          onClick={() => {
+            document.location.href = "/notice";
+          }}
+        >
+          목록
+        </button>
+        <div className="post_detail_back">
+          <div className="post_list">
+            <div className="PostId">{postItem.id}번 게시글</div>
+            <div className="PostTitle">제목 : {postItem.title}</div>
+            <div className="PostContent">내용 : {postItem.content}</div>
+            <div className="PostDate">작성 일자 :</div>
+          </div>
+        </div>
+      </Notice>
+    </>
   );
 };
 
 export default Post_Detail;
+
+// const Post_Detail = () => {
+//   const [postItem, setPostItem] = useState([]);
+//   const [error, setError] = useState(null);
+//   const { id } = useParams();
+
+//   useEffect(() => {
+//     getPostItem(id);
+//   }, [id]);
+
+//   const getPostItem = async (id) => {
+//     try {
+//       const data = await axios.get(`http://localhost:4001/boards/${id}`);
+//       setPostItem(data.data);
+//     } catch (e) {
+//       setError(e);
+//     }
+//   };
+
+//   return (
+//     <>
+//       <div>{postItem.id}번 게시글</div>
+//       <div>제목 : {postItem.title}</div>
+//       <div>내용 : {postItem.content}</div>
+//     </>
+//   );
+// };
+
+// export default Post_Detail;
