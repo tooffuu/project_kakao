@@ -5,6 +5,7 @@ import Notice_app from "./components_notice/Notice_app";
 import Rode from "./components/Rode";
 import Post_Write from "./components_notice/Post_Write";
 import Post_Detail from "./components_notice/Post_Detail";
+import Post_Edit from "./components_notice/Post_Edit";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route path={"/notice/:id"} exact>
             <Post_Detail />
+          </Route>
+          <Route path={"/notice/edit/:id"} exact>
+            <Post_Edit />
           </Route>
         </Switch>
       </BrowserRouter>

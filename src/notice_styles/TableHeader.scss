@@ -12,7 +12,7 @@
   top: 30px;
   margin-left: auto;
   margin-right: auto;
-  border: 0.5px solid rgb(147, 147, 147);
+  border: 0.1px solid rgb(186, 186, 186);
 }
 .button_1 {
   position: relative;
@@ -31,19 +31,21 @@
 }
 .header {
   background-color: rgb(225, 225, 225);
+  font-family: "KOTRA_GOTHIC";
+  font-size: 17px;
 }
 .header th:first-child {
-  width: 100px;
+  width: 110px;
 }
 .header th:nth-child(2) {
-  width: 500px;
+  width: 755px;
 }
 .header th:nth-child(3) {
-  width: 200px;
+  width: 145px;
 }
-.header th:last-child {
-  width: 100px;
-}
+// .header th:last-child {
+//   width: 100px;
+// }
 
 .post_box {
   background-color: whitesmoke;

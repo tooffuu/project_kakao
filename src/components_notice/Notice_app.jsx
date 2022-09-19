@@ -9,19 +9,6 @@ const Notice_app = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const onRemove = async (id) => {
-    try {
-      await axios({
-        url: `http://localhost:4001/boards/${id}`,
-        method: "DELETE",
-      });
-      setPosts((posts) => posts.filter((post) => post.id !== id));
-    } catch (e) {
-      setError(e);
-    }
-    alert("게시글이 삭제됩니다.");
-  };
-
   useEffect(() => {
     const getData = async () => {
       try {
@@ -50,7 +37,7 @@ const Notice_app = () => {
     <>
       <Notice>
         <TableHeader>
-          <Post_List posts={posts} onRemove={onRemove} />
+          <Post_List posts={posts} />
         </TableHeader>
       </Notice>
     </>

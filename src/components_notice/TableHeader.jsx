@@ -19,7 +19,7 @@ const TableHeader = ({ children }) => {
               <th>No</th>
               <th>제목</th>
               <th>등록일</th>
-              <th>🎃</th>
+              {/* <th>🎃</th> */}
             </tr>
           </thead>
         </table>

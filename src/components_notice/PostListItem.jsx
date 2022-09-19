@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../notice_styles/PostListItem.scss";
 
-const PostListItem = ({ post, onRemove }) => {
-  const { title, id, perform_date, content } = post;
+const PostListItem = ({ post }) => {
+  const { title, id, perform_date } = post;
   const data = perform_date.split("T");
 
   return (
@@ -22,23 +21,7 @@ const PostListItem = ({ post, onRemove }) => {
             </div>
           </div>
           <div className="register_date">{data[0]}</div>
-          <div className="changeitem">
-            <div className="edit" onClick={() => {}}>
-              수정
-            </div>
-            <div
-              className="remove"
-              onClick={() => {
-                onRemove(id);
-              }}
-            >
-              삭제
-            </div>
-          </div>
         </div>
-        {/* <div className="boardcont">
-          <div>{content}</div>
-        </div> */}
       </li>
     </>
   );

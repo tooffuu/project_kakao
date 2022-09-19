@@ -1,15 +1,13 @@
 .PostListItem {
   padding-bottom: 15px;
-  // font-family: "KOTRA_GOTHIC";
-  font-family: "고딕";
+  font-family: "KOTRA_GOTHIC";
+  // font-family: "고딕";
   width: 1075px;
   overflow: hidden;
   padding-top: 20px;
-  border: 0.3px solid rgb(191, 191, 191);
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
+  border-top: 0.3px solid rgb(191, 191, 191);
   font-size: 15px;
+  height: 10px;
 }
 .PostListItem:first-child {
   border-top: 0px;
@@ -21,25 +19,26 @@
 }
 .Header_1 {
   position: relative;
-  top: -3px;
+  top: -7px;
 }
 .boardId {
   width: 120px;
-  height: 100%;
   position: relative;
   display: inline-block;
   text-align: center;
   margin-right: 5px;
+  border-right: 0.3px solid rgb(191, 191, 191);
 }
 .boardtext_1 {
   position: relative;
   display: inline-block;
-  width: 580px;
-  text-align: center;
+  width: 750px;
 }
 .boardtext {
   display: inline-block;
+  position: relative;
   cursor: pointer;
+  left: 15px;
 }
 .boardtext:hover {
   text-decoration: underline;
@@ -48,38 +47,8 @@
 .register_date {
   position: relative;
   display: inline-block;
-  width: 250px;
-  left: 10px;
+  width: 150px;
+  left: 45px;
   text-align: center;
-}
-.edit {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  margin-right: 20px;
-  // left: 15px;
-}
-.remove {
-  display: inline-block;
-  cursor: pointer;
-  // margin-left: 30px;
-}
-.changeitem {
-  position: relative;
-  display: inline-block;
-  left: 17px;
-}
-.boardcont {
-  text-align: left;
-  margin-top: 10px;
-  height: 100px;
-  background-color: rgb(230, 230, 230);
-  max-height: 500px;
-}
-.boardcont div {
-  text-align: center;
-  position: relative;
-  top: 10px;
-  flex-wrap: wrap;
-  max-height: 500px;
+  border-left: 0.3px solid rgb(191, 191, 191);
 }
