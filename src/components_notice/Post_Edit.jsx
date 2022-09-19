@@ -8,18 +8,17 @@ const Post_Edit = () => {
   const [postItem, setPostItem] = useState([]);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  //   const [insertToggle, setInsertToggle] = useState(false);
   const [error, setError] = useState(null);
   const { id } = useParams();
 
   const onChangeTitle = (e) => {
     setTitle(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   const onChangeContent = (e) => {
     setContent(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   useEffect(() => {
@@ -61,8 +60,8 @@ const Post_Edit = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     onUpdate(title, content);
-    setTitle("");
-    setContent("");
+    // setTitle(title);
+    // setContent(content);
   };
 
   // useEffect(() => {
@@ -70,12 +69,12 @@ const Post_Edit = () => {
   //   setContent(content);
   // }, [title, content]);
 
-  //   useEffect(() => {
-  //     if ((postItem.title, postItem.content)) {
-  //       setTitle(postItem.title);
-  //       setContent(postItem.content);
-  //     }
-  //   }, [title, content]);
+  // useEffect(() => {
+  //   if ((title, content)) {
+  //     setTitle(title);
+  //     setContent(content);
+  //   }
+  // }, [title, content]);
 
   return (
     <>
@@ -109,7 +108,7 @@ const Post_Edit = () => {
               type="submit"
               className="write_sub"
               onClick={() => {
-                // alert("수정되었습니다.");
+                alert("수정되었습니다.");
                 window.location.href = `http://localhost:3000/notice/${id}`;
               }}
             >
