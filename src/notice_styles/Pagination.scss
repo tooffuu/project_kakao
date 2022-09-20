@@ -1,0 +1,14 @@
+.pagination {
+  position: relative;
+  top: 530px;
+}
+.page_item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  left: 35%;
+  cursor: pointer;
+}
+.page_item:hover {
+  text-decoration: underline;
+}

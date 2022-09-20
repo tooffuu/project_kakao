@@ -56,7 +56,8 @@ const Notice = ({ children }) => {
                         <a href="#">새소식</a>
                         <ul>
                           <li>
-                            <Link to="/notice">공지사항</Link>
+                            {/* <Link to="/notice">공지사항</Link> */}
+                            <a href="/notice">공지사항</a>
                           </li>
                           <li>
                             <a href="#">보도자료</a>

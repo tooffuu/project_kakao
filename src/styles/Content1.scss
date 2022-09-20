@@ -26,33 +26,36 @@
   background-color: #ffef6b;
 }
 .content-1 {
-  width: 1200px;
+  width: 1100px;
   height: 884px;
   position: relative;
   margin: 0 auto;
   text-align: center;
   border: 1px solid rgba(255, 0, 0, 0);
+  // border: 1px solid blue;
 }
 .content-1 > img {
-  width: 100%;
+  width: 1180px;
   height: 884px;
   display: block;
   position: absolute;
   margin-left: 0;
+  right: -30px;
 }
 .text {
   color: inherit;
   display: block;
   position: relative;
   font-family: "GmarketSansMedium";
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   text-align: left;
-  top: 15%;
+  top: 150px;
   letter-spacing: -0.3px;
+  left: 30px;
 }
 .body-text {
   font-family: "KOTRA_GOTHIC";
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -0.5px;
   color: rgb(62, 62, 62);
   line-height: 2;
@@ -61,13 +64,15 @@
   display: inline-block;
 }
 .download-button {
-  // border: 1px solid red;
+  position: relative;
   width: 180px;
   height: 58px;
   display: inline-block;
   background-color: white;
   margin: 10px;
   border-radius: 15px;
+  left: -20px;
+  top: 10px;
 }
 .download-button > li {
   margin-top: 10px;

@@ -3,11 +3,14 @@ import axios from "axios";
 import Notice from "./Notice";
 import TableHeader from "./TableHeader";
 import Post_List from "./Post_List";
+import Pagination from "./Pagination";
 
 const Notice_app = () => {
   const [posts, setPosts] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(10);
 
   useEffect(() => {
     const getData = async () => {
@@ -33,11 +36,26 @@ const Notice_app = () => {
   if (isLoading) {
     return <>LOADING ...</>;
   }
+
+  const indexOfLast = currentPage * postsPerPage;
+  const indexOfFirst = indexOfLast - postsPerPage;
+
+  const currentPosts = (posts) => {
+    let currentPosts = 0;
+    currentPosts = posts.slice(indexOfFirst, indexOfLast);
+    return currentPosts;
+  };
+
   return (
     <>
       <Notice>
         <TableHeader>
-          <Post_List posts={posts} />
+          <Post_List posts={currentPosts(posts)} />
+          <Pagination
+            postsPerPage={postsPerPage}
+            totalPosts={posts.length}
+            paginate={setCurrentPage}
+          />
         </TableHeader>
       </Notice>
     </>
