@@ -63,20 +63,20 @@ const Post_Detail = () => {
         </div>
         <div className="content_edit">
           <button
-            className="content_update"
-            onClick={() => {
-              document.location.href = `/notice/edit/${id}`;
-            }}
-          >
-            수정
-          </button>
-          <button
             className="content_delete"
             onClick={() => {
               onRemove(id);
             }}
           >
             삭제
+          </button>
+          <button
+            className="content_update"
+            onClick={() => {
+              document.location.href = `/notice/edit/${id}`;
+            }}
+          >
+            수정
           </button>
         </div>
       </Notice>

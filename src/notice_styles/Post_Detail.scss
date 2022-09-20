@@ -48,5 +48,15 @@
 .content_edit {
   position: relative;
   top: 70px;
-  left: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  right: 25px;
+}
+.content_edit > button {
+  font-family: "KOTRA_GOTHIC";
+  padding: 3px 15px;
+}
+.content_update {
+  position: relative;
+  right: 10px;
 }

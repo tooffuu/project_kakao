@@ -13,37 +13,48 @@
   left: 35px;
   input {
     position: relative;
-    border: 1px solid blue;
-    width: 1000px;
-    height: 60px;
-    margin-bottom: 15px;
-    border: 2px solid rgb(119, 119, 119);
-    border-radius: 10px;
+    width: 980px;
+    height: 50px;
+    border: 0px;
+    top: 3px;
+    left: 10px;
     font-size: 18px;
     font-weight: bold;
     font-family: "KOTRA_GOTHIC";
-    &::placeholder {
-      position: relative;
-      width: 970px;
-      left: 10px;
-    }
+  }
+  input:focus {
+    outline: none;
   }
   textarea {
     position: relative;
-    width: 1000px;
-    height: 500px;
-    border: 2px solid rgb(119, 119, 119);
-    border-radius: 10px;
+    width: 970px;
+    height: 480px;
+    resize: none;
+    border: 0px;
+    left: 10px;
+    top: 8px;
     font-size: 18px;
     font-family: "KOTRA_GOTHIC";
-    // &::placeholder {
-    //   position: absolute;
-    //   height: 450px;
-    //   width: 970px;
-    //   left: 10px;
-    //   top: 20px;
-    // }
   }
+  textarea:focus {
+    outline: none;
+  }
+}
+.input_write {
+  border: 1px solid blue;
+  width: 1000px;
+  height: 60px;
+  margin-bottom: 15px;
+  border: 2px solid rgb(119, 119, 119);
+  border-radius: 10px;
+}
+
+.text_write {
+  border: 2px solid rgb(119, 119, 119);
+  border-radius: 10px;
+  // border: 1px solid blue;
+  width: 1000px;
+  height: 500px;
 }
 .write_sub {
   position: relative;

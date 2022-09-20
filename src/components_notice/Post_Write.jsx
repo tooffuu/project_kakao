@@ -43,21 +43,25 @@ const Post_Write = () => {
         </button>
         <div className="write_home">
           <form className="tableinput">
-            <input
-              onChange={onChange}
-              name="title"
-              value={title}
-              placeholder="제목을 입력하세요"
-              autocomplete="off"
-            />
-            <textarea
-              className="write_content"
-              onChange={onChange}
-              name="content"
-              value={content}
-              placeholder="내용을 입력하세요"
-              autocomplete="off"
-            />
+            <div className="input_write">
+              <input
+                onChange={onChange}
+                name="title"
+                value={title}
+                placeholder="제목을 입력하세요"
+                autocomplete="off"
+              />
+            </div>
+            <div className="text_write">
+              <textarea
+                className="write_content"
+                onChange={onChange}
+                name="content"
+                value={content}
+                placeholder="내용을 입력하세요"
+                autocomplete="off"
+              />
+            </div>
             <button type="submit" onClick={onInsert} className="write_sub">
               게시글 등록
             </button>

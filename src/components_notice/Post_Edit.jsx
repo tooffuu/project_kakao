@@ -89,24 +89,28 @@ const Post_Edit = () => {
         </button>
         <div className="write_home">
           <form className="tableinput" onSubmit={onSubmit}>
-            <input
-              onChange={onChangeTitle}
-              name="title"
-              defaultValue={postItem.title}
-              placeholder={title}
-              autocomplete="off"
-            />
-            <textarea
-              className="write_content"
-              onChange={onChangeContent}
-              name="content"
-              defaultValue={postItem.content}
-              placeholder={content}
-              autocomplete="off"
-            />
+            <div className="input_write">
+              <input
+                onChange={onChangeTitle}
+                name="title"
+                defaultValue={postItem.title}
+                placeholder={title}
+                autocomplete="off"
+              />
+            </div>
+            <div className="text_write">
+              <textarea
+                className="write_content"
+                onChange={onChangeContent}
+                name="content"
+                defaultValue={postItem.content}
+                placeholder={content}
+                autocomplete="off"
+              />
+            </div>
             <button
               type="submit"
-              className="write_sub"
+              className="write_sub_2"
               onClick={() => {
                 alert("수정되었습니다.");
                 window.location.href = `http://localhost:3000/notice/${id}`;
