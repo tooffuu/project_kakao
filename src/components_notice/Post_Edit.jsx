@@ -29,6 +29,8 @@ const Post_Edit = () => {
           method: "GET",
         });
         setPostItem(data.data);
+        setTitle(data.data.title);
+        setContent(data.data.content);
       } catch (e) {
         setError(e);
       }
@@ -48,14 +50,15 @@ const Post_Edit = () => {
         data: { title, content },
       });
       setPostItem(data.data);
+
       //   onInsertToggle();
     } catch (e) {
       setError(e);
     }
   };
 
-  // console.log(postItem.title);
-  // console.log(postItem.content);
+  console.log(postItem.title);
+  console.log(postItem.content);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -93,7 +96,7 @@ const Post_Edit = () => {
               <input
                 onChange={onChangeTitle}
                 name="title"
-                defaultValue={postItem.title}
+                value={title}
                 placeholder={title}
                 autocomplete="off"
               />
@@ -103,7 +106,7 @@ const Post_Edit = () => {
                 className="write_content"
                 onChange={onChangeContent}
                 name="content"
-                defaultValue={postItem.content}
+                value={content}
                 placeholder={content}
                 autocomplete="off"
               />

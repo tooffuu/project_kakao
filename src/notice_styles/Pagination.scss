@@ -1,12 +1,15 @@
+.page_div {
+  position: absolute;
+}
 .pagination {
   position: relative;
-  top: 530px;
+  top: 760px;
 }
 .page_item {
   position: relative;
   display: inline-block;
   margin-right: 30px;
-  left: 35%;
+  left: 430px;
   cursor: pointer;
 }
 .page_item:hover {

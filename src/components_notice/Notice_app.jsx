@@ -10,7 +10,8 @@ const Notice_app = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(10);
+  const [postsPerPage, setPostsPerPage] = useState(15); // 한 페이지에 나타낼 글 수
+  let pageCount = 5;
 
   useEffect(() => {
     const getData = async () => {
@@ -55,6 +56,7 @@ const Notice_app = () => {
             postsPerPage={postsPerPage}
             totalPosts={posts.length}
             paginate={setCurrentPage}
+            pageCount={pageCount}
           />
         </TableHeader>
       </Notice>
