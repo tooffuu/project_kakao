@@ -13,12 +13,10 @@ const Post_Edit = () => {
 
   const onChangeTitle = (e) => {
     setTitle(e.target.value);
-    // console.log(e.target.value);
   };
 
   const onChangeContent = (e) => {
     setContent(e.target.value);
-    // console.log(e.target.value);
   };
 
   useEffect(() => {
@@ -50,34 +48,16 @@ const Post_Edit = () => {
         data: { title, content },
       });
       setPostItem(data.data);
-
       //   onInsertToggle();
     } catch (e) {
       setError(e);
     }
   };
 
-  console.log(postItem.title);
-  console.log(postItem.content);
-
   const onSubmit = (e) => {
     e.preventDefault();
     onUpdate(title, content);
-    // setTitle(title);
-    // setContent(content);
   };
-
-  // useEffect(() => {
-  //   setTitle(title);
-  //   setContent(content);
-  // }, [title, content]);
-
-  // useEffect(() => {
-  //   if ((title, content)) {
-  //     setTitle(title);
-  //     setContent(content);
-  //   }
-  // }, [title, content]);
 
   return (
     <>
@@ -115,8 +95,11 @@ const Post_Edit = () => {
               type="submit"
               className="write_sub_2"
               onClick={() => {
-                alert("수정되었습니다.");
-                window.location.href = `http://localhost:3000/notice/${id}`;
+                if (window.confirm("수정하시겠습니까?")) {
+                  alert("수정되었습니다.");
+                  window.location.href = `http://localhost:3000/notice/${id}`;
+                } else {
+                }
               }}
             >
               수정

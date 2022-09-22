@@ -1,7 +1,7 @@
 import React from "react";
 import "../notice_styles/Pagination.scss";
 
-const Pagination = ({ postsPerPage, paginate, totalPosts, pageCount }) => {
+const Pagination = ({ postsPerPage, paginate, totalPosts }) => {
   const pageNumbers = [];
   for (let i = 1; i < Math.ceil(totalPosts / postsPerPage) + 1; i++) {
     // Math.ceil : 올림 <

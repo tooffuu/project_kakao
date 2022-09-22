@@ -25,8 +25,11 @@ const Post_Write = () => {
         content: input.content,
       })
       .then(() => {
-        alert("등록 완료 !!");
-        window.location.href = `http://localhost:3000/notice`;
+        if (window.confirm("작성한 글을 등록하시겠습니까?")) {
+          alert("등록되었습니다.");
+          window.location.href = `http://localhost:3000/notice`;
+        } else {
+        }
       });
   };
 

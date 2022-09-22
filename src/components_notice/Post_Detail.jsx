@@ -21,7 +21,6 @@ const Post_Detail = () => {
     } catch (e) {
       setError(e);
     }
-    alert("게시글이 삭제됩니다.");
     window.location.href = `http://localhost:3000/notice`;
   };
 
@@ -65,7 +64,11 @@ const Post_Detail = () => {
           <button
             className="content_delete"
             onClick={() => {
-              onRemove(id);
+              if (window.confirm("정말 삭제하시겠습니까?")) {
+                onRemove(id);
+                alert("삭제되었습니다.");
+              } else {
+              }
             }}
           >
             삭제
