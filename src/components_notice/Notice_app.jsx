@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import PostListItem from "../notice_styles/Notice_app.scss";
 import axios from "axios";
 import Notice from "./Notice";
 import TableHeader from "./TableHeader";
 import Post_List from "./Post_List";
 import Pagination from "./Pagination";
+import Foot from "../components/Foot";
 
 const Notice_app = () => {
   const [posts, setPosts] = useState([]);
@@ -49,17 +51,24 @@ const Notice_app = () => {
 
   return (
     <>
-      <Notice>
-        <TableHeader>
-          <Post_List posts={currentPosts(posts)} />
-          <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={posts.length}
-            paginate={setCurrentPage}
-            pageCount={pageCount}
-          />
-        </TableHeader>
-      </Notice>
+      <body>
+        <div className="page_container">
+          <Notice>
+            <TableHeader>
+              <Post_List posts={currentPosts(posts)} />
+              <Pagination
+                postsPerPage={postsPerPage}
+                totalPosts={posts.length}
+                paginate={setCurrentPage}
+                pageCount={pageCount}
+              />
+            </TableHeader>
+          </Notice>
+          <div className="foot_er">
+            <Foot />
+          </div>
+        </div>
+      </body>
     </>
   );
 };
