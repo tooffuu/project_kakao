@@ -29,7 +29,10 @@ const content1 = () => {
             <div className="button">
               <ul className="download-button">
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.kakaobank.channel"
+                    target="_blank" // 새 창으로 열기
+                  >
                     <img src={imgUrl2} alt="" />
                     Google Play
                   </a>
@@ -37,7 +40,10 @@ const content1 = () => {
               </ul>
               <ul className="download-button">
                 <li>
-                  <a href="#">
+                  <a
+                    href="https://apps.apple.com/kr/app/id1258016944"
+                    target="_blank"
+                  >
                     <img src={imgUrl3} alt="" />
                     App Store
                   </a>
