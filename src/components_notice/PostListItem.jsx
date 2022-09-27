@@ -7,22 +7,24 @@ const PostListItem = ({ post }) => {
 
   return (
     <>
-      <li className="PostListItem">
-        <div className="Header_1">
-          <div className="boardId">{id}</div>
-          <div className="boardtext_1">
-            <div
-              className="boardtext"
-              onClick={() => {
-                document.location.href = `/notice/${id}`;
-              }}
-            >
-              {title}
+      <div className="list_item_back">
+        <li className="PostListItem">
+          <div className="Header_1">
+            <div className="boardId">{id}</div>
+            <div className="boardtext_1">
+              <div
+                className="boardtext"
+                onClick={() => {
+                  document.location.href = `/notice/${id}`;
+                }}
+              >
+                {title}
+              </div>
             </div>
+            <div className="register_date">{data[0]}</div>
           </div>
-          <div className="register_date">{data[0]}</div>
-        </div>
-      </li>
+        </li>
+      </div>
     </>
   );
 };
