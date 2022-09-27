@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import "../notice_styles/Post_Detail.scss";
 import Notice from "./Notice";
+import Foot from "../components/Foot";
 
 const Post_Detail = () => {
   const [postItem, setPostItem] = useState([]);
@@ -41,48 +42,53 @@ const Post_Detail = () => {
 
   return (
     <>
-      <Notice>
-        <button
-          className="button_1"
-          onClick={() => {
-            document.location.href = "/notice";
-          }}
-        >
-          목록
-        </button>
-        <div className="post_detail_back_2">
-          <div className="post_list_2">
-            <div className="postHeader">
-              <div className="postId">{postItem.id}</div>
-              <div className="postTitle">{postItem.title}</div>
-              <div className="postDate">{date[0]}</div>
+      <body>
+        <div className="page_container">
+          <Notice>
+            <button
+              className="button_1"
+              onClick={() => {
+                document.location.href = "/notice";
+              }}
+            >
+              목록
+            </button>
+            <div className="post_detail_back_2">
+              <div className="post_list_2">
+                <div className="postHeader">
+                  <div className="postId">{postItem.id}</div>
+                  <div className="postTitle">{postItem.title}</div>
+                  <div className="postDate">{date[0]}</div>
+                </div>
+                <div className="postContent">{postItem.content}</div>
+              </div>
             </div>
-            <div className="postContent">{postItem.content}</div>
-          </div>
+            <div className="content_edit">
+              <button
+                className="content_delete"
+                onClick={() => {
+                  if (window.confirm("정말 삭제하시겠습니까?")) {
+                    onRemove(id);
+                    alert("삭제되었습니다.");
+                  } else {
+                  }
+                }}
+              >
+                삭제
+              </button>
+              <button
+                className="content_update"
+                onClick={() => {
+                  document.location.href = `/notice/edit/${id}`;
+                }}
+              >
+                수정
+              </button>
+            </div>
+          </Notice>
         </div>
-        <div className="content_edit">
-          <button
-            className="content_delete"
-            onClick={() => {
-              if (window.confirm("정말 삭제하시겠습니까?")) {
-                onRemove(id);
-                alert("삭제되었습니다.");
-              } else {
-              }
-            }}
-          >
-            삭제
-          </button>
-          <button
-            className="content_update"
-            onClick={() => {
-              document.location.href = `/notice/edit/${id}`;
-            }}
-          >
-            수정
-          </button>
-        </div>
-      </Notice>
+      </body>
+      <Foot />
     </>
   );
 };

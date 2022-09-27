@@ -64,11 +64,9 @@ const Notice_app = () => {
               />
             </TableHeader>
           </Notice>
-          <div className="foot_er">
-            <Foot />
-          </div>
         </div>
       </body>
+      <Foot />
     </>
   );
 };

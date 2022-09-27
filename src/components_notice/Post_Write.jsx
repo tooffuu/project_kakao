@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import Foot from "../components/Foot";
 import Notice from "../components_notice/Notice";
 import "../notice_styles/Post_Write.scss";
 
@@ -35,42 +36,47 @@ const Post_Write = () => {
 
   return (
     <>
-      <Notice>
-        <button
-          className="button_1"
-          onClick={() => {
-            document.location.href = "/notice";
-          }}
-        >
-          목록
-        </button>
-        <div className="write_home">
-          <form className="tableinput">
-            <div className="input_write">
-              <input
-                onChange={onChange}
-                name="title"
-                value={title}
-                placeholder="제목을 입력하세요"
-                autocomplete="off"
-              />
-            </div>
-            <div className="text_write">
-              <textarea
-                className="write_content"
-                onChange={onChange}
-                name="content"
-                value={content}
-                placeholder="내용을 입력하세요"
-                autocomplete="off"
-              />
-            </div>
-            <button type="submit" onClick={onInsert} className="write_sub">
-              게시글 등록
+      <body>
+        <div className="page_container">
+          <Notice>
+            <button
+              className="button_1"
+              onClick={() => {
+                document.location.href = "/notice";
+              }}
+            >
+              목록
             </button>
-          </form>
+            <div className="write_home">
+              <form className="tableinput">
+                <div className="input_write">
+                  <input
+                    onChange={onChange}
+                    name="title"
+                    value={title}
+                    placeholder="제목을 입력하세요"
+                    autocomplete="off"
+                  />
+                </div>
+                <div className="text_write">
+                  <textarea
+                    className="write_content"
+                    onChange={onChange}
+                    name="content"
+                    value={content}
+                    placeholder="내용을 입력하세요"
+                    autocomplete="off"
+                  />
+                </div>
+                <button type="submit" onClick={onInsert} className="write_sub">
+                  게시글 등록
+                </button>
+              </form>
+            </div>
+          </Notice>
         </div>
-      </Notice>
+      </body>
+      <Foot />
     </>
   );
 };
