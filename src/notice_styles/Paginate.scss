@@ -1,0 +1,25 @@
+.page_div {
+  position: absolute;
+}
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  left: 50px;
+}
+ul.pagination li {
+  display: inline-block;
+  margin-left: 20px;
+  border: 1px solid red;
+}
+// .page_item {
+//   position: relative;
+//   display: inline-block;
+//   margin-right: 30px;
+//   left: 430px;
+//   cursor: pointer;
+// }
+// .page_item:hover {
+//   text-decoration: underline;
+// }

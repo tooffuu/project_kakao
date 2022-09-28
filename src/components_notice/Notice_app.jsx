@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import PostListItem from "../notice_styles/Notice_app.scss";
 import axios from "axios";
 import Notice from "./Notice";
 import TableHeader from "./TableHeader";
 import Post_List from "./Post_List";
-import Pagination from "./Pagination";
+import Paginate from "./Paginate";
 import Foot from "../components/Foot";
 
 const Notice_app = () => {
@@ -56,7 +55,7 @@ const Notice_app = () => {
           <Notice>
             <TableHeader>
               <Post_List posts={currentPosts(posts)} />
-              <Pagination
+              <Paginate
                 postsPerPage={postsPerPage}
                 totalPosts={posts.length}
                 paginate={setCurrentPage}
