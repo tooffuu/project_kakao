@@ -5,20 +5,34 @@
   position: relative;
   display: flex;
   justify-content: center;
-  width: 100px;
-  left: 50px;
+  left: 72%;
+  top: 390px;
 }
-ul.pagination li {
+.pagination li {
+  position: relative;
   display: inline-block;
   margin-left: 20px;
-  border: 1px solid red;
+}
+.pagination li a {
+  font-family: "고딕";
+  font-size: 1rem;
+}
+.pagination li a:hover {
+  text-decoration: underline;
+}
+.active {
+  font-weight: bold;
 }
 // .page_item {
 //   position: relative;
 //   display: inline-block;
-//   margin-right: 30px;
-//   left: 430px;
+//   margin-right: 10px;
+//   left: 200px;
+//   top: 380px;
 //   cursor: pointer;
+// }
+// .page_item:active {
+//   font-weight: bold;
 // }
 // .page_item:hover {
 //   text-decoration: underline;
