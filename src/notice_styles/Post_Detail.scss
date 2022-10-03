@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "HallymGothic-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .post_detail_back_2 {
   position: relative;
   // min-height: 850px;
@@ -16,6 +24,8 @@
 .postHeader {
   border-bottom: 0.3px solid rgb(191, 191, 191);
   text-align: center;
+  font-family: "HallymGothic-Regular";
+  font-size: 1rem;
 }
 .postId {
   width: 95px;
