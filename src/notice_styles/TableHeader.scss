@@ -12,7 +12,7 @@
   top: 30px;
   margin-left: auto;
   margin-right: auto;
-  border: 0.1px solid rgb(186, 186, 186);
+  border-top: 0.1px solid rgb(196, 196, 196);
 }
 .button_1 {
   position: relative;
@@ -20,19 +20,19 @@
   left: 950px;
   padding: 10px 40px;
   border-radius: 20px;
-  background-color: rgb(223, 223, 223);
-  border: 2px solid black;
+  background-color: rgb(238, 238, 238);
+  border: 1.5px solid rgb(191, 191, 191);
   cursor: pointer;
-  font-size: 15px;
-  font-family: "MICEGothic Bold";
-}
-.button_1 > Link {
-  border: 1px solid blue;
+  color: rgb(77, 77, 77);
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "HallymGothic-Regular";
 }
 .header {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(238, 238, 238);
   font-family: "KOTRA_GOTHIC";
   font-size: 17px;
+  color: rgb(59, 59, 59);
 }
 .header th:first-child {
   width: 110px;
@@ -43,10 +43,6 @@
 .header th:nth-child(3) {
   width: 145px;
 }
-// .header th:last-child {
-//   width: 100px;
-// }
-
 .post_box {
   background-color: whitesmoke;
   position: relative;

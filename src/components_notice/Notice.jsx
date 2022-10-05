@@ -393,9 +393,6 @@ const Notice = ({ children }) => {
           </div>
         </div>
       </div>
-      {/* <div className="footer">
-        <Foot />
-      </div> */}
     </>
   );
 };
